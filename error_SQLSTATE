@@ -1,0 +1,9 @@
+ ошибка SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes
+ решение: в файле  AppServiceProvider.php добавить
+
+ use Illuminate\Support\Facades\Schema;
+
+ public function boot()
+ {
+     Schema::defaultStringLength(191);
+ }
