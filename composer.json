@@ -8,6 +8,9 @@
         "php": ">=5.6.4",
         "barryvdh/laravel-debugbar": "v2.4.1",
         "barryvdh/laravel-ide-helper": "v2.4.1",
+        "filp/whoops": "2.3.0",
+        "graham-campbell/exceptions": "v9.4.0",
+        "hirak/prestissimo": "0.3.8",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "laravelrus/sleepingowl": "4.82.20"

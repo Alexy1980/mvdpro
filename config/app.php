@@ -171,6 +171,7 @@ return [
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         // админка
         SleepingOwl\Admin\Providers\SleepingOwlServiceProvider::class,
+        GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
         /*
          * Application Service Providers...
          */

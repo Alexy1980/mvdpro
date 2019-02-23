@@ -19,7 +19,33 @@ use SleepingOwl\Admin\Navigation\Page;
 //
 // // or
 //
-// AdminSection::addMenuPage(\App\User::class)
+// AdminSection::addMenuPage(\App\User::class);
+
+/*AdminNavigation::addPage(\App\User::class)->setFromArray([
+    [
+        'title' => "Users",
+        'icon' => 'fa fa-credit-card',
+        'priority' =>'1000',
+        'pages' => [
+            (new Page(\App\User::class))
+                ->setIcon('fa fa-fax')
+                ->setPriority(0),
+        ]
+    ],
+]);
+
+AdminNavigation::addPage(\App\Crime::class)->setFromArray([
+    [
+        'title' => "Crimes",
+        'icon' => 'fa fa-credit-card',
+        'priority' =>'1000',
+        'pages' => [
+            (new Page(\App\Crime::class))
+                ->setIcon('fa fa-fax')
+                ->setPriority(0),
+        ]
+    ],
+]);*/
 
 return [
     [
@@ -32,6 +58,39 @@ return [
         'title' => 'Information',
         'icon'  => 'fa fa-exclamation-circle',
         'url'   => route('admin.information'),
+    ],
+
+    [
+        'title' => "Crimes",
+        'icon' => 'fa fa-credit-card',
+        'priority' =>'1000',
+        'pages' => [
+            (new Page(\App\Crime::class))
+                ->setIcon('fa fa-fax')
+                ->setPriority(0),
+        ]
+    ],
+
+    [
+        'title' => "Users",
+        'icon' => 'fa fa-credit-card',
+        'priority' =>'1000',
+        'pages' => [
+            (new Page(\App\User::class))
+                ->setIcon('fa fa-fax')
+                ->setPriority(0),
+        ]
+    ],
+
+    [
+        'title' => "fundamentalSettings",
+        'icon' => 'fa fa-credit-card',
+        'priority' =>'1000',
+        'pages' => [
+            (new Page(\App\fundamentalSetting::class))
+                ->setIcon('fa fa-fax')
+                ->setPriority(0),
+        ]
     ],
 
     // Examples

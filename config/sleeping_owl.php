@@ -145,7 +145,20 @@ return [
     | Select default settings for datatable
     |
     */
-    'datatables' => [],
+    'datatables' => [
+        'mysql' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_HOST', 'localhost'),
+            'database'  => env('DB_DATABASE', 'laravel.vue'),
+            'username'  => env('DB_USERNAME', 'Paul'),
+            'password'  => env('DB_PASSWORD', '170680'),
+            'charset'     => 'utf8mb4',
+            'collation'   => 'utf8mb4_unicode_ci',
+            'prefix'      => '',
+            'strict'      => true,
+            'engine'      => null,
+        ],
+    ],
 
     /*
     |--------------------------------------------------------------------------
